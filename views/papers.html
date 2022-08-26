@@ -7,19 +7,31 @@
         <link rel="stylesheet" href="main.css">
     </head>
 <body>
-    <div class="nav">
-        <input type="checkbox">
-          <span></span>
-          <span></span>
-          <div class="menu">
-            <li><a href="/About">About me</a></li>
-            <li><a href="/">Home</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/CV">CV</a></li>
-          </div>
+    <div class = "topLeftCorner">
+        <div>
+          <h1>Robyn Stella</h1>
+      </div>
+      <div class="nav left">
+          <input type="checkbox">
+            <span></span>
+            <span></span>
+            <div class="menu">
+              <li><a href="/">home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/contact">Contact</a></li>
+              <li><a href="/CV">CV</a></li>
+            </div>
+    
       </div>
     </div>
-      <div class = "paper">
+    <div class = "TopCenter">
+        <button class = "paperButton" id="paper1Button">Paper#1</button>
+        <button class = "paperButton" id="paper2Button">Paper#2</button>
+        <button class = "paperButton" id="paper3Button">Paper#3</button>
+        <button class = "paperButton" id="paper4Button">Paper#4</button>
+    </div>
+    <div class = "paperBox">
+      <div id="paper1" class = "paper">
         <h2>Essay#1</h2>
         <br>
             Robyn Murray 
@@ -113,7 +125,7 @@
       </div>
       <div>
         
-      <div class = "paper">
+      <div id="paper2" class = "paper">
         <h2>Essay#2</h2>
         <br> 
             Robyn Murray 
@@ -189,7 +201,7 @@
     </div>
     <div>
       
-    <div class = "paper">
+    <div id="paper3" class = "paper">
       <h2>Essay#3</h2>
       <br> 
             Robyn Murray
@@ -312,8 +324,8 @@
         Sugnet, Charles. “Nuruddin Farah's Maps: Deterritorialization and "the postmodern."” World Literature Today, vol. 72, no. 4, 1998, pp. 739-746.
         <br>
         Wright, Derek. “Nations as Fictions: Postmodernism in the Novels of Nuruddin Farah.” Critique: Studies in Contemporary Fiction, vol. 38, no. 3, 1997, pp. 193-204.
-    
-    <div class = "paper">
+    </div>
+    <div id="paper4" class = "paper">
          <h2>Essay#4</h2>
         <br> 
             Robyn Murray
@@ -351,4 +363,5 @@
       </div>
       
 </body>
+<script src = "./paperController.js"></script>
 </html> 

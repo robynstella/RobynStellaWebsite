@@ -5,6 +5,9 @@ const http = require("http");
 //Routers section
 const mainRouter = require('./routes/mainRoute.js')
 const paperRouter = require('./routes/paperRoute.js')
+const aboutRouter = require('./routes/aboutRoute.js')
+const contactRouter = require('./routes/contactRoute.js')
+
 
 
 const app = express();
@@ -14,9 +17,11 @@ app.use(bodyParser.json({ limit: "100mb" }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/", mainRouter);
 app.use("/papers", paperRouter);
+app.use("/about", aboutRouter);
+app.use("/contact",contactRouter);
 app.use(express.static("scripts"));
 app.use(express.static('styling'));
-app.use(express.static('pictures'));
+app.use(express.static('images'));
 
 let server = http.createServer(app);
 
