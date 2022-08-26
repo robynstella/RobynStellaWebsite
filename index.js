@@ -7,6 +7,7 @@ const mainRouter = require('./routes/mainRoute.js')
 const paperRouter = require('./routes/paperRoute.js')
 const aboutRouter = require('./routes/aboutRoute.js')
 const contactRouter = require('./routes/contactRoute.js')
+const cvRouter = require('./routes/cvRoute.js')
 
 
 
@@ -19,6 +20,7 @@ app.use("/", mainRouter);
 app.use("/papers", paperRouter);
 app.use("/about", aboutRouter);
 app.use("/contact",contactRouter);
+app.use("/cv",cvRouter);
 app.use(express.static("scripts"));
 app.use(express.static('styling'));
 app.use(express.static('images'));
